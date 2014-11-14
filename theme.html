@@ -1,0 +1,159 @@
+<!doctype html xmlns:fb="http://ogp.me/ns/fb#">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="noJS"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="text:BlogName" content="Clothes" />
+    <meta name="text:SafeBlogName" content="Clothes" />
+    <meta name="image:Header" content="http://static.tumblr.com/767789f9dfc1e64f033c6a1459571bf7/3cvhfpr/HcYmwqo3x/tumblr_static_vintage-shot-blurred.png"/>
+    <meta name="image:Editor Headshot" content=""/>
+    <meta name="text:Editor Name" content=""/>
+    <meta name="text:Editor Bio" content=""/>
+    <meta name="text:Editor Email" content=""/>    
+    <meta name="select:Gender" content="mens" title="Mens">
+    <meta name="select:Gender" content="womens" title="Womens">
+    <meta name="select:Gender" content="unisex" title="Unisex">
+    <meta name="if:Secondary" content="1"/> 
+    <meta name="description" content="{block:PermalinkPage}{block:Posts}{PhotoAlt}{/block:Posts}{/block:PermalinkPage}{block:IndexPage}{MetaDescription}{/block:IndexPage}"/>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="http://www.wantering.com/static/css/assets/favicon.png" type="image/x-icon">
+    <title>{block:PermalinkPage}{block:Posts}{PlaintextPhotoAlt} | {/block:Posts}{/block:PermalinkPage}Wantering {text:BlogName}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://www.wantering.com/static/tumblrscript.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.wantering.com/static/wantering.tumblr.min.css">
+    <script type="text/javascript">
+    photoLink = '{block:PermalinkPage}{block:Posts}{block:LinkURL}{LinkURL}{/block:LinkURL}{/block:Posts}{/block:PermalinkPage}';
+    pageDetails=new Object();
+    {block:PermalinkPage}    
+    pageDetails.url='{block:Posts}{LinkURL}{/block:Posts}';
+    pageDetails.reblogSource='{block:Posts}{block:RebloggedFrom}{ReblogRootURL}{block:RebloggedFrom}{/block:Posts}';
+    {/block:PermalinkPage}
+    pageDetails.blogName='{text:BlogName}';
+    pageDetails.gender='{select:Gender}';
+    pageDetails.editorName='{text:Editor Name}';
+    pageDetails.editorEmail='{text:Editor Email}';
+	{block:IndexPage}
+    History.replaceState({state: 'index'}, null, window.location.pathname);
+    console.log(History.getState());
+	{/block:IndexPage}
+    </script>
+    <style>
+        {customCSS}
+    </style>
+    <meta property="fb:admin" content="157654291011015">
+    <meta property="og:title" content="Wantering {text:BlogName}">
+    {block:IndexPage}
+    <meta property="og:description" content="{Description}">
+    <meta property="og:image" content="{PortraitURL-48}">
+    {/block:IndexPage}
+    {block:PermalinkPage}
+    <meta property="og:image" content="{PhotoURL-500}">
+    <meta property="og:description" content="{PlaintextCaption}">
+    {/block:PermalinkPage}
+</head>
+<body class="{block:IndexPage}onHomepage{/block:IndexPage}{block:PermalinkPage} permalinkPage{/block:PermalinkPage}">
+<div id="fb-root"></div>
+    <header>
+        <a id="backToProduct" href="#"><span>LEAVE CHECKOUT</span></a>
+        <div class="barModule">
+        	<a href="/" class="ir logo" title="Wantering Home" data-bypass=""></a>
+        	<div class="col col-2 searchBarModule">
+        	    <div class="searchBox">
+        	        <form name="searchForm" class="searchForm">
+        	            <input type="search" placeholder="Search by Brand, Color or Price Range" value="" class="searchField" name="searchField" autocorrect="off" autocapitalize="off" autocomplete="off">
+        	            <a href="#" class="button primaryButton">Search</a>
+        	        </form>
+        	   </div>
+            </div>
+        </div>
+    </header>
+    <div id="blackOut"></div>
+    <div id="main"><div id="emptyDiv">
+            {block:PermalinkPage}{block:Posts}{block:Photo}
+            <section id="blogPostDetail">
+                <div class="productDetailWrap">
+                    <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+                    <div class="blogPostContent">
+                        {Caption}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>    
+            {/block:Photo}{/block:Posts}{/block:PermalinkPage}      
+        </div>
+    {block:IndexPage}
+        <section id="grid">
+        <div id="aboutWantering">
+            <div id="aboutImage" style="background: url('{image:Header}') no-repeat"><h1 {block:IfSecondary}style="top: 35px;"{/block:IfSecondary}>wantering</h1><h2>{text:blogName}</h2></div>
+            <div class="aboutContent">  
+                {Description}
+                <h2>Follow Specific Categories</h2>
+                <ul>
+                    <li><a href="http://www.tumblr.com/follow/wantering-menswear">Mens</a></li>
+                    <li><a href="http://www.tumblr.com/follow/hipster-womens-fashion">Womens</a></li>
+                    <li><a href="http://www.tumblr.com/follow/wantering-jewelry">Jewelry</a></li>
+                    <li><a href="http://www.tumblr.com/follow/wantering-sneakers">Sneakers</a></li>
+                    <li><a href="http://www.tumblr.com/follow/wantering-blog">Blog Posts</a></li>                    
+                </ul>
+                <div class="social-links">
+    				<ul> 
+    					<li><a href="http://www.twitter.com/wantering" class="social-icon-twitter" target="_blank"><span>Twitter</span></a></li>
+    					<li><a href="http://www.pinterest.com/wantering" class="social-icon-pinterest" target="_blank"><span>Pinterest</span></a></li>
+    					<li><a href="http://tumblr.wantering.com" class="social-icon-tumblr" target="_blank"><span>Tumblr</span></a></li>						
+    					<li><a href="http://www.facebook.com/wantering" class="social-icon-facebook" target="_blank"><span>Facebook</span></a></li>
+    					
+    					<li><a href="http://www.instagram.com/wantering" class="social-icon-instagram" target="_blank"><span>Instagram</span></a></li>
+    					<li><a href="http://www.wantering.com/?utm_source=tumblr&amp;utm_medium=blog-header&amp;utm_campaign=social-link" class="social-icon-website" target="_blank"><span>Website</span></a></li>
+    			    </ul>
+                </div>
+			</div>
+			{block:ifEditorBio}
+    		<div id="editors">
+    		    <img src="{image:Editor Headshot}"/ class="editorHeadshot">
+    		    <div id="editorText">
+        		    <h3>Editor: {text:Editor Name}</h3>
+        		    <p class="editorBio">{text:Editor Bio}</p>    		  
+    		    </div>
+    		</div>
+    		{/block:ifEditorBio}
+        </div>
+                {block:Posts}
+                {block:Photo}
+                <div id="{PostID}" class="gridItem" data-image-large="{PhotoURL-1280}" data-image-medium="{PhotoURL-500}" data-image-small="{PhotoURL-250}" data-title="{PlaintextPhotoAlt}" data-reblog-source="{block:RebloggedFrom}{ReblogParentURL}{/block:RebloggedFrom}" data-notes="{block:NoteCount}{NoteCount}{block:NoteCount}" data-tags="{block:HasTags}{block:Tags}{Tag}{/block:Tags}{/block:HasTags}" data-link-url="{block:LinkURL}{LinkURL}{/block:LinkURL}">
+                    <div class="gridImage">
+                        <a href="{Permalink}" target="_blank"><span class="coverEverything"></span>{block:NoteCount}<span class="gridNotes">{NoteCount}</span>{/block:NoteCount}</a>
+                    </div>
+                    <div class="postContent">{Caption}</div>
+                    <div class="readMoreFade"><a href="{block:RebloggedFrom}{ReblogRootURL}{/block:RebloggedFrom}">See Full Post</a></div>
+                    <div class="reblogAndLikeButton">
+                        {ReblogButton color="grey" size="50"}
+                     </div>
+                </div>
+                {/block:Photo}
+                {block:Text}
+                <div id="{PostID}" class="gridItem" data-image-large="{PhotoURL-1280}" data-image-medium="{PhotoURL-500}" data-image-small="{PhotoURL-250}" data-title="{PlaintextPhotoAlt}" data-reblog-source="{block:RebloggedFrom}{ReblogParentURL}{/block:RebloggedFrom}" data-notes="{block:NoteCount}{NoteCount}{block:NoteCount}" data-tags="{block:HasTags}{block:Tags}{Tag}{/block:Tags}{/block:HasTags}" data-link-url="{block:LinkURL}{LinkURL}{/block:LinkURL}">
+                    <div class="gridText">
+                        <h2>{Title}</h2>
+                        <p>{Body}</p>
+                    </div>
+                </div>    
+                {/block:Text}
+                {/block:Posts}
+            <div id="pagedNavigation">   
+            {block:NextPage}
+                <a href="{NextPage}" id="nextPage" rel="next">Next &#187;</a>
+            {/block:NextPage}
+            </div>
+            <div id="gridSizer"></div> 
+            <div class="gutterSizer"></div> 
+    {/block:IndexPage}        
+        </section>
+    </div>
+    <div class="tt-iframe-container">
+    </div>
+</body>
+</html>
